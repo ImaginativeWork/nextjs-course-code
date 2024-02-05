@@ -6,12 +6,14 @@ function PortfolioProjectPage() {
   console.log(router.pathname);
   console.log(router.query);
 
+  const thisPageName = router.query.projectid;
+
   // send a request to some backend server
   // to fetch the piece of data with an id of router.query.projectid
 
   return (
     <div>
-      <h1>The Portfolio Project Page</h1>
+      <h1>The Portfolio Project Page { thisPageName }</h1>
     </div>
   );
 }
